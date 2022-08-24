@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+:root {
+  --bg-color: #e6eff6;
+  --bg-color-information-up: #ffffff;
+  --bg-color-information-down-left: #2bb3b1;
+  --bg-color-information-down-right: #4abebd;
+  --fn-color-information-down-value: hsl(183deg 53% 63%);
+  --fn-color-information-up-h3: hsl(177deg 46% 50%);
+  --fn-color-information-up-p: hsl(220deg 16% 85%);
+  --fn-size-16px: 16px;
+  --fn-color-h4: hsl(70deg 75% 62%);
+  --ff-primary: "Karla", sans-serif;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container-main {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  background-color: var(--bg-color);
+  height: 100vh;
+}
+.information {
+  box-shadow: 0px 0px 17px -8px #000000;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.information-up {
+  font-size: var(--fn-size-16px);
+  padding: 30px 30px 30px 30px;
+  background-color: var(--bg-color-information-up);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: var(--ff-primary);
+  width: 500px;
+}
+
+.information-up h3 {
+  gap: 15px;
+  color: var(--fn-color-information-up-h3);
+  display: flex;
+}
+.information-up h4 {
+  display: flex;
+  text-align: left;
+  color: var(--fn-color-h4);
+}
+.information p {
+  display: flex;
+  text-align: left;
+  font-size: 13px;
+  color: var(--fn-color-information-up-p);
+}
+.container-down {
+  width: 500px;
+  display: flex;
+}
+.information-down-left {
+  font-family: var(--ff-primary);
+  font-size: var(--fn-size-16px);
+  width: 50%;
+  padding: 30px 30px 30px 30px;
+  background-color: var(--bg-color-information-down-left);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.information-down-left h5 {
+  color: var(--bg-color-information-up);
+  font-family: var(--ff-primary);
+}
+
+.information-down-left .value {
+  color: var(--bg-color-information-up);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.information-down-left .value .p2 {
+  font-size: 13px;
+  color: var(--fn-color-information-down-value);
+}
+.information-down-left .p-down-left {
+  color: var(--bg-color-information-up);
+  font-size: 12px;
+  display: flex;
+}
+button {
+  color: var(--bg-color-information-up);
+  font-family: var(--ff-primary);
+  font-size: 10px;
+  height: 35px;
+  border: none;
+  background-color: var(--fn-color-h4);
+  border-radius: 5px;
+  box-shadow: 0px 0px 17px -8px #000000;
+}
+.information-down-right {
+  font-family: var(--ff-primary);
+  font-size: var(--fn-size-16px);
+  color: var(--fn-color-information-down-value);
+  width: 50%;
+  padding: 30px 30px 30px 30px;
+  background-color: var(--bg-color-information-down-right);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.information-down-right h5 {
+  color: var(--bg-color-information-up);
+  display: flex;
+  flex-direction: column;
+}
+.information-down-right p {
+  color: hsl(186deg 45% 74%);
+  display: flex;
+  flex-direction: column;
+  width: 135px;
+}
+.atribution {
+  position: absolute;
+  bottom: 0;
+}
